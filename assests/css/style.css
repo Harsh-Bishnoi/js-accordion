@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+section {
+    min-height: 100vh;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.container {
+    max-width: 1140px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.bg-img {
+    background-image: url(../images/bg-img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ml-12 {
+    margin-left: 12px;
+}
+
+.mr-12 {
+    margin-right: 12px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.head {
+    font-family: "poppins", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+    color: white;
+}
+
+.accordionTittle {
+    font-family: "poppins", sans-serif;
+    font-size: 20px;
+    line-height: normal;
+    font-weight: 400;
+    background-color: black;
+    padding: 20px;
+    cursor: pointer;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.accordionContent {
+    font-family: "poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+    color: white;
+    background-color: grey;
+    padding: 20px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.accordionTittle+.accordionContent {
+    display: none;
+}
+
+.accordionTittle.is-open+.accordionContent {
+    display: block;
+}
+
+@media (min-width:992px) {
+    .accordion {
+        width: 700px;
+    }
+}
+
+@media (max-width:992px) {
+    .accordion {
+        max-width: 700px;
+    }
+}
