@@ -33,7 +33,6 @@
  }
 
  .accordion {
-     border-radius: 5px;
      overflow: hidden;
      width: 900px;
  }
@@ -42,6 +41,7 @@
      background-image: url(../images/bg-img.png);
      background-size: cover;
      background-repeat: no-repeat;
+     background-position: center;
  }
 
  .overflow {
@@ -50,6 +50,14 @@
 
  .mt-10 {
      margin-top: 10px;
+ }
+
+ .d-flex {
+     display: flex;
+ }
+
+ .justify-content-center {
+     justify-content: center;
  }
 
  .head {
@@ -66,7 +74,7 @@
      align-items: center;
      padding-left: 15px;
      cursor: pointer;
-     background: black;
+     background-image: url(../images/bg-img.png);
  }
 
  .accordion-header.active .arrow-svg {
@@ -75,36 +83,32 @@
 
  .arrow-svg {
      right: 1px;
-     position: absolute;
      transition: 0.1s;
+     margin-right: 15px;
+     height: 20px;
+     width: 20px;
+ }
+
+ .position-absolute {
+     position: absolute;
  }
 
  .position-relative {
      position: relative;
  }
 
- .accordion-header img {
-     margin-right: 15px;
-     width: 24px;
-     height: 24px;
- }
-
  .accordion-content {
      display: none;
      padding: 15px;
-     background: grey;
+     backdrop-filter: blur(100px);
  }
 
- .accordion-content p {
-     margin: 0;
+ .mb-30 {
+     margin-bottom: 30px;
  }
 
- .mt-30 {
-     margin-top: 30px;
- }
-
- .accordion-header.active+.accordion-content {
-     display: block;
+ .mt-20{
+    margin-top: 20px;
  }
 
  .heading {
@@ -124,25 +128,6 @@
      font-weight: 400;
      line-height: 32px;
      text-align: left;
-     color: white
- }
-
- @media (max-width:767.98px) {
-     .head-2 {
-         font-size: 25px;
-     }
-
-     .para-3 {
-         font-size: 20px;
-     }
- }
-
- @media (max-width:575.98px) {
-     .head-2 {
-         font-size: 18px;
-     }
-
-     .para-3 {
-         font-size: 15px;
-     }
+     color: white;
+     padding-left: 20px;
  }
